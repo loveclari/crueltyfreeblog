@@ -1,13 +1,14 @@
-<!DOCTYPE HTML PUBLIC>
-<HTML>
-   <HEAD>
-    <link rel="stylesheet" type="text/css" href="./styles/homepage.css" />
+<!DOCTYPE html PUBLIC>
+<html>
+   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/homepage.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet/less" href="styles.less" />
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     <TITLE>My Blogpsace</TITLE>
-   </HEAD>
-   <BODY>
+   </head>
+   <body>
       <div class="navbar">
       <nav class="navgrid">
          <ul>
@@ -19,14 +20,14 @@
      </div>
       <header class="masthead">
          <div class="logo"></div>
-         <h1 class="site-title">The world would be better if was cruelty-free</h2> 
+         <h1 class="site-title">The world would be better if was cruelty-free</h1> 
             <p class="intro">Reviews of beauty products that are non animal tested and vegan.</p> 
-            <a href="#blog" class="btn btn-circle page-scroll">
-               <i class="far fa-arrow-alt-circle-down"></i>
-           </a>    
+            <button><a href="#blog" class="btn btn-circle page-scroll">
+               <i class="far fa-arrow-alt-circle-down"></i></a>
+            </button>    
       </header>
-         <section class="cards grid" style="position:relative;">
-          <a name="blog" style="position:absolute; top:-80px;"></a>
+         <section class="cards grid">
+          <a class="cards-a" name="blog"></a>
            <ul>
              <li>
                <img src="https://cdn.shopify.com/s/files/1/0203/8454/products/Herbivore_Prism_20AHA_FacialTreatment_Main.jpg?v=1590864514">
@@ -59,8 +60,8 @@
              </li>
            </ul>
          </section>
-         <section class="about-me" style="position:relative;">
-          <a name="about-me" style="position:absolute; top:-20px;"></a>
+         <section class="about-me">
+          <a class="about-me-a" name="about-me"></a>
            <div class="box-1">
            <img class="about-me-img" src="./IMG/about-the-author.jpeg" />
            </div>
@@ -69,9 +70,9 @@
              About the Author
            </h2>
            <p class="author-name">Melissa Sims</p>
-           <p>Since I was a child, I used to love playing with my mother's beauty items. I am still that girl, but as I grew up and became more conscious about the importance of all living creatures, I became a big advocate for comestics and items that do no hardm to any living creature.
+           <q>Since I was a child, I used to love playing with my mother's beauty items. I am still that girl, but as I grew up and became more conscious about the importance of all living creatures, I became a big advocate for comestics and items that do no hardm to any living creature.
            I can prove it to you that they are even better than your regular beauty items.
-           Follow me on this journey!</p>
+           Follow me on this journey!</q>
            </p>
           </div>
          </section>
@@ -89,5 +90,5 @@
               <i class="fab fa-telegram-plane"></i>
           </a>
          </section>
-   </BODY>
-</HTML>
+   </body>
+</html>

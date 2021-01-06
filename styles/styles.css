@@ -1,12 +1,11 @@
-
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+	-ms-text-size-adjust: 100%;
 }
-header{
+header {
 	padding: 10px 100px 100px 100px;
-	background-color: #fbf7f5
+	background-color: #fbf7f5;
 }
 
 body {
@@ -19,12 +18,14 @@ img {
 	width: 100%;
 	height: auto;
 }
+
 a {
 	position: relative;
 	text-decoration: none;
 }
+
 a::before {
-	content: "";
+	content: '';
 	position: absolute;
 	height: 3px;
 	right: 0px;
@@ -32,13 +33,14 @@ a::before {
 	left: 0px;
 	background-color: #d81dd8;
 }
-  a:hover {
+
+a:hover {
 	color: #d81dd8;
-  }
-  a:hover::before {
+}
+
+a:hover::before {
 	background: linear-gradient(to right, #d81dd8 40%, #6210fa 75%);
-  }
-  
+}
 
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -66,11 +68,10 @@ a::before {
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; 
+	z-index: 100000;
 }
 
 body,
-button,
 input,
 select,
 textarea {
@@ -80,76 +81,95 @@ textarea {
 	line-height: 1.5;
 }
 
+button {
+	display: block;
+	margin: auto;
+	border: none;
+	background-color: transparent;
+}
+
 h1,
-h2
-{
+h2 {
 	margin: 0;
 }
-h3{
+
+h3 {
 	text-transform: uppercase;
 	text-align: left;
 	font-size: 10px;
 	padding: 0 0 0.5em 0;
 	margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
 }
 
 p {
 	margin: 0;
 	font-size: 12px;
 }
-.social{
+
+.social {
 	width: 100%;
 	height: auto;
-    text-align: center;
-    margin-top: 20px;
+	text-align: center;
+	margin-top: 20px;
 }
-.social a{
+
+.social a {
 	display: inline-block;
 	padding: 5px;
+}
 
+.social a::before {
+	display: none;
 }
-.social a::before{
-    display: none;
-}
-.social a i{
+
+.social a i {
 	color: #3b1e59;
-    width: 55px;
-    height: 55px;
-    font-size: 25px;
-    line-height: 50px!important;
-    border: 3px solid #fff;
-	opacity: .8;
-    transition-property: transform;
-    -moz-transition-property: -moz-transform;
-    -webkit-transition-property: -webkit-transform;
-    transition: all 0.6s cubic-bezier(0.88, -0.48, 0.38, 1.85);
+	width: 55px;
+	height: 55px;
+	font-size: 25px;
+	line-height: 50px !important;
+	border: 3px solid #fff;
+	opacity: 0.8;
+	transition-property: transform;
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	transition: all 0.6s cubic-bezier(0.88, -0.48, 0.38, 1.85);
 	border-radius: 50%;
-	
-	}
-.social a i:hover{
+}
+
+.social a i:hover {
 	opacity: 1;
 	border-radius: 20%;
-	
 }
-.social a:hover i.fa-facebook,.social a:hover i.fa-telegram-plane{
-	transition:  .6s ease-in;
-	background: #0088cc; 
+
+.social a:hover i.fa-facebook,
+.social a:hover i.fa-telegram-plane {
+	transition: 0.6s ease-in;
+	background: #0088cc;
 	color: white;
 }
-.social a:hover i.fa-at{
-	transition:  .6s ease-in;
-	background: #D44638; 
-	color:white;
+
+.social a:hover i.fa-at {
+	transition: 0.6s ease-in;
+	background: #d44638;
+	color: white;
 }
-.social a:hover i.fa-instagram{
-	transition:  .6s ease-in;
-	background: linear-gradient(#F58529 20%, #FEDA77 50%, #DD2A7B 75%, #8134AF 90%, #515BD4);
-	color:white;
-	
+.social a:hover i.fa-instagram {
+	transition: 0.6s ease-in;
+	background: linear-gradient(#f58529 20%, #feda77 50%, #dd2a7b 75%, #8134af 90%, #515bd4);
+	color: white;
 }
 
+@media only screen and (max-width: 768px) {
+	header {
+		padding: 20px;
+	}
 
+	.social {
+		margin-top: 0;
+	}
+}

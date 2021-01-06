@@ -13,6 +13,7 @@
 .flexbox {
 	width: 100%;
 }
+
 .flexbox-image {
 	background-repeat: no-repeat;
 	padding: 50px;
@@ -24,15 +25,19 @@
 .image-blogpost-1 {
 	background-image: url(../IMG/watermelon-review.jpg);
 }
+
 .image-blogpost-2 {
 	background-image: url(../IMG/herbivore-blue-tansy.png);
 }
+
 .image-blogpost-3 {
 	background-image: url(../IMG/prism.png);
 }
+
 .review {
 	padding: 0 0 10px 50px;
 }
+
 h1 {
 	font-size: 1.5em;
 }
@@ -43,6 +48,7 @@ h2 {
 	line-height: 1;
 	margin-top: 20px;
 }
+
 h2 {
 	padding-bottom: 20px;
 	font-size: 1.3em;
@@ -56,24 +62,30 @@ p {
 p:nth-of-type() {
 	padding-bottom: 20px;
 }
+
 .date {
 	height: 64px;
 	width: 230px;
 	font-style: italic;
 }
+
 .links {
 	margin-top: 30px;
 }
+
 .next-blog {
 	float: right;
 }
+
 @media only screen and (max-width: 768px) {
 	.flex-box {
 		display: block;
+		padding: 20px;
 	}
 	.flexbox-image {
 		width: auto;
-		height: 800px;
+		height: 300px;
+		padding: 0;
 	}
 	.review {
 		padding: 0;
